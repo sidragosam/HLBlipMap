@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blips with Tooltips</title>
-  <style>
-    body {
-      background-image: url("background.png");
-      width: 100%;
-	  height: 1080px;
-	  background-repeat: no-repeat;
-	  background-size: contain;
-	  background-color: #738bad;
-    }
-    
-    .blip {
-      position: absolute;
-      background-color: #ff0000;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-    
-    .tooltip {
-      visibility: hidden;
-      width: 120px;
-      background-color: #000000;
-      color: #ffffff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px;
-      position: absolute;
-      z-index: 1;
-    }
-    
-    .blip:hover .tooltip {
-      visibility: visible;
-    }
-	
-	.content {
-      width: 300px;
-      margin-left: auto;
-      margin-right: 20px;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-  </style>
+  <title>Hungary Life MTA Drogtérkép</title>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="author" content="Ignéczi Tibor">
+  <meta name="description" content="Hungary Life Drogtérkép">
 </head>
 <body>
   <div class="blip" style="top: 730px; left: 430px;">
-    <span class="tooltip">Blip 1</span>
+    <span class="tooltip">Vörösfoszfor<br>
+	Nátrium-Hidroxid<br>
+	Sósav<br>
+	Dietil-Éter</span>
   </div>
-  <div class="blip" style="top: 300px; left: 400px;">
-    <span class="tooltip">Blip 2</span>
+  <div class="blip" style="top: 830px; left: 585px;">
+    <span class="tooltip">Efedrin<br>
+	Hajnalkamag<br>
+	Petróleum<br>
+	Metanol</span>
   </div>
-  <div class="blip" style="top: 500px; left: 600px;">
-    <span class="tooltip">Blip 3</span>
+  <div class="blip" style="top: 735px; left: 875px;">
+    <span class="tooltip">Kapszulaforma<br>
+	Hawaii-bébi farózsamag<br>
+	Nátrium-Karbonát</span>
+  </div>
+  <div class="blip" style="top: 900px; left: 875px;">
+    <span class="tooltip">Kokalevél<br>
+	Kálium-permanganát</span>
+  </div>
+  <div class="blip" style="top: 775px; left: 900px;">
+    <span class="tooltip">Kerozin<br>
+	Kénsav<br>
+	Hangyasav<br>
+	Ammónia</span>
+  </div>
+  <div class="blip" style="top: 850px; left: 950px;">
+    <span class="tooltip">Aceton<br>
+	Ammónia-szulfát<br>
+	Tiszta alkohol<br>
+	Lenmagolaj</span>
+  </div>
+  <div class="blip" style="top: 890px; left: 955px;">
+    <span class="tooltip">Rózsamag<br>
+	Tulipánmag<br>
+	Hidrogén-Jodid</span>
   </div>
   <div class="content">
     <h1>HL Drogtérkép</h1>
