@@ -5,6 +5,7 @@
 	  background-repeat: no-repeat;
 	  background-size: contain;
 	  background-color: #738bad;
+	  font-family: monospace;
     }
     
     .blip {
@@ -37,5 +38,23 @@
       margin-left: auto;
       margin-right: 20px;
       padding: 20px;
-      background-color: rgba(255, 255, 255, 0.8);
+	  color: #fff;
+      background-color: rgba(0, 0, 0, 0.6);
+	  text-align: center;
     }
+	.additional-info {
+	  border-top: 3px solid black;
+      width: 300px;
+      margin-left: auto;
+      margin-right: 20px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+	  text-align: center;
+    }
+	a:hover {
+		color: #eb927d;
+	}
+	strong {
+		color: #eb927d;
+	}

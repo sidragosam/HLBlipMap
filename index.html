@@ -8,9 +8,19 @@
   <meta name="description" content="Hungary Life Drogtérkép">
 </head>
 <body>
+	<script>
+    function showFoszforInfo() {
+      var infoDiv = document.getElementById("foszfor-info");
+      infoDiv.style.display = "block";
+    }
+	function showNaohInfo() {
+      var infoDiv = document.getElementById("naoh-info");
+      infoDiv.style.display = "block";
+    }
+  </script>
   <div class="blip" style="top: 730px; left: 430px;">
-    <span class="tooltip">Vörösfoszfor<br>
-	Nátrium-Hidroxid<br>
+    <span class="tooltip"><a onclick="showFoszforInfo()">Vörösfoszfor</a><br>
+	<a onclick="showNaohInfo()">Nátrium-Hidroxid</a><br>
 	Sósav<br>
 	Dietil-Éter</span>
   </div>
@@ -44,11 +54,44 @@
   <div class="blip" style="top: 890px; left: 955px;">
     <span class="tooltip">Rózsamag<br>
 	Tulipánmag<br>
-	Hidrogén-Jodid</span>
+	<a onclick="showAdditionalInfo()">Hidrogén-Jodid</a></span>
   </div>
   <div class="content">
     <h1>HL Drogtérkép</h1>
     <p>Az ikonokra kattintva megnézheted, hogy az adott kereskedő mit árul.</p>
+  </div>
+  <!-- Vörösfoszfor -->
+  <div class="additional-info" id="foszfor-info" style="display: none;">
+    <h2>Meth</h2>
+    <p>Efedrin + <strong>Vörösfoszfor</strong> + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + Dietil-Éter</p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="3.png" width="35px"> + <img src="4.png" width="35px"></p>
+	<hr>
+	<h2>Kristály</h2>
+    <p>Efedrin + <strong>Vörösfoszfor</strong> + Hidrogén-Jodid + Nátrium-Hidroxid + Kénsav + Rózsamag morzsalék + Aceton + Nátrium-Hidroxid</p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="14.png" width="35px"> + <img src="6.png" width="35px"> + <img src="17.png" width="35px"> + <img src="2.png" width="35px"></p>
+	<hr>
+	<h2>Speed</h2>
+    <p>Efedrin + <strong>Vörösfoszfor</strong> + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + Lenmagolaj</p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="3.png" width="35px"> + <img src="39.png" width="35px"></p>
+  </div>
+  <!-- Nátrium-Hidroxid -->
+  <div class="additional-info" id="naoh-info" style="display: none;">
+    <h2>Meth</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + <strong>Nátrium-Hidroxid</strong> + Sósav + Dietil-Éter</p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="3.png" width="35px"> + <img src="4.png" width="35px"></p>
+	<hr>
+	<h2>Kristály</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + <strong>Nátrium-Hidroxid</strong> + Kénsav + Rózsamag morzsalék + Aceton + <strong>Nátrium-Hidroxid</strong></p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="14.png" width="35px"> + <img src="6.png" width="35px"> + <img src="17.png" width="35px"> + <img src="2.png" width="35px"></p>
+	<hr>
+	<h2>Speed</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + <strong>Nátrium-Hidroxid</strong> + Sósav + Lenmagolaj</p>
+    <p><img src="5.png" width="35px"> + <img src="1.png" width="35px"> + <img src="12.png" width="35px"> + <img src="2.png" width="35px"> + <img src="3.png" width="35px"> + <img src="39.png" width="35px"></p>
+	<hr>
+	<h2>Crack</h2>
+    <p>Hawaii-bébi farózsa morzsalék + <strong>Nátrium-Hidroxid</strong> + Efedrin + Hidrogén-Jodid + Dietil-Éter + Sósav</p>
+    <p><img src="6.png" width="35px"> + <img src="2.png" width="35px"> + <img src="5.png" width="35px"> + <img src="12.png" width="35px"> + <img src="4.png" width="35px"> + <img src="3.png" width="35px"></p>
+  
   </div>
 </body>
 </html>
