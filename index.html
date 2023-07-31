@@ -15,24 +15,24 @@
 	<a onclick="showSavInfo()">Sósav</a><br>
 	<a onclick="showDietilInfo()">Dietil-Éter</a></span>
   </div>
-  <div class="blip" style="top: 825px; left: 580px;">
-    <span class="tooltip">Efedrin<br>
-	Hajnalkamag<br>
-	Petróleum<br>
-	Metanol</span>
+  <div class="blip" style="top: 825px; left: 580px;"> 
+    <span class="tooltip"><a onclick="showEfeInfo()">Efedrin</a><br>
+	<a onclick="showHajnalkaInfo()">Hajnalkamag</a><br>
+	<a onclick="showPetroleumInfo()">Petróleum</a><br>
+	<a onclick="showMetanolInfo()">Metanol</a></span>
   </div>
   <div class="blip" style="top: 730px; left: 860px;">
-    <span class="tooltip">Kapszulaforma<br>
-	Hawaii-bébi farózsamag<br>
-	Nátrium-Karbonát</span>
+    <span class="tooltip"><a onclick="showKapszulaInfo()">Kapszulaforma</a><br>
+	<a onclick="showHawaiiInfo()">Hawaii-bébi farózsamag</a><br>
+	<a onclick="showNatrikabInfo()">Nátrium-Karbonát</a></span>
   </div>
   <div class="blip" style="top: 890px; left: 860px;">
-    <span class="tooltip">Kokalevél<br>
-	Kálium-permanganát</span>
+    <span class="tooltip"><a onclick="showKokalevInfo()">Kokalevél</a><br>
+	<a onclick="showKaliumpermInfo()">Kálium-permanganát</a></span>
   </div>
   <div class="blip" style="top: 770px; left: 885px;">
-    <span class="tooltip">Kerozin<br>
-	Kénsav<br>
+    <span class="tooltip"><a onclick="showKerozinInfo()">Kerozin</a><br>
+	<a onclick="showKensavInfo()">Kénsav</a><br>
 	Hangyasav<br>
 	Ammónia</span>
   </div>
@@ -40,12 +40,12 @@
     <span class="tooltip">Aceton<br>
 	Ammónia-szulfát<br>
 	Tiszta alkohol<br>
-	Lenmagolaj</span>
-  </div>
+	<a onclick="showLenmagolajInfo()">Lenmagolaj</a></span>
+  </div> 
   <div class="blip" style="top: 880px; left: 945px;">
     <span class="tooltip">Rózsamag<br>
 	Tulipánmag<br>
-	<a onclick="showAdditionalInfo()">Hidrogén-Jodid</a></span>
+	<a onclick="showHidrogenJodInfo()">Hidrogén-Jodid</a></span>
   </div>
   <div class="content">
     <h1>HL Drogtérkép</h1>
@@ -97,9 +97,140 @@
     <p>Hawaii-bébi farózsa morzsalék + Nátrium-Hidroxid + Efedrin + Hidrogén-Jodid + Dietil-Éter + <strong>Sósav</strong></p>
     <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
   </div>
+  <!-- Dietil-Éter -->
+  <div class="additional-info" id="dietil-info" style="display: none;">
+	<h2>Meth</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + <strong>Dietil-Éter</strong></p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/4.png" width="35px"></p>
+	<hr>
+	<h2>Crack</h2>
+    <p>Hawaii-bébi farózsa morzsalék + Nátrium-Hidroxid + Efedrin + Hidrogén-Jodid + <strong>Dietil-Éter</strong> + Sósav</p>
+    <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
+  </div>
+  <!-- Efedrin -->
+  <div class="additional-info" id="efedrin-info" style="display: none;">
+	<h2>Meth</h2>
+    <p><strong>Efedrin</strong> + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + Dietil-Éter</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/4.png" width="35px"></p>
+	<hr>
+	<h2>LSD</h2>
+	<p>Hawaii-bébi farózsa morzsalék + Nátrium-Hidroxid + <strong>Efedrin</strong> + Hidrogén-Jodid + Dietil-Éter + Sósav</p>
+    <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
+	<h2>Kristály</h2>
+    <p><strong>Efedrin</strong> + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + Kénsav + Rózsamag morzsalék + Aceton + Nátrium-Hidroxid</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/6.png" width="35px"> + <img src="imgs/17.png" width="35px"> + <img src="imgs/2.png" width="35px"></p>
+	<hr>
+	<h2>Speed</h2>
+    <p><strong>Efedrin</strong> + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + Lenmagolaj</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/39.png" width="35px"></p>
+	<hr>
+	<h2>Crack</h2>
+    <p>Hawaii-bébi farózsa morzsalék + Nátrium-Hidroxid + <strong>Efedrin</strong> + Hidrogén-Jodid + Dietil-Éter + Sósav</p>
+    <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
+  </div>
+  <!-- Kénsav -->
+  <div class="additional-info" id="kensav-info" style="display: none;">
+	<h2>Kristály</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + <strong>Kénsav</strong> + Rózsamag morzsalék + Aceton + Nátrium-Hidroxid</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/6.png" width="35px"> + <img src="imgs/17.png" width="35px"> + <img src="imgs/2.png" width="35px"></p>
+	<h2>COCA</h2>
+    <p>Kokalevél + Nátrium-Karbonát + Házi kerozin + <strong>Házi kénsav</strong> + Kálium-permanganát</p>
+    <p><img src="imgs/40.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/13.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/41.png" width="35px"></p>
+  </div>
+  <!-- Hidrogén-Jodid -->
+  <div class="additional-info" id="hidrogenjod-info" style="display: none;">
+	<h2>Meth</h2>
+    <p>Efedrin + Vörösfoszfor + <strong>Hidrogén-Jodid</strong> + Nátrium-Hidroxid + Sósav + Dietil-Éter</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/4.png" width="35px"></p>
+	<hr>
+	<h2>Crack</h2>
+    <p>Hawaii-bébi farózsa morzsalék + Nátrium-Hidroxid + Efedrin + <strong>Hidrogén-Jodid</strong> + Dietil-Éter + Sósav</p>
+    <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
+	<h2>Kristály</h2>
+    <p>Efedrin + Vörösfoszfor + <strong>Hidrogén-Jodid</strong> + Nátrium-Hidroxid + Kénsav + Rózsamag morzsalék + Aceton + Nátrium-Hidroxid</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/6.png" width="35px"> + <img src="imgs/17.png" width="35px"> + <img src="imgs/2.png" width="35px"></p>
+	<hr>
+	<h2>Speed</h2>
+    <p>Efedrin + Vörösfoszfor + <strong>Hidrogén-Jodid</strong> + Nátrium-Hidroxid + Sósav + Lenmagolaj</p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/39.png" width="35px"></p>
+	<hr>
+  </div>
+  <!-- Hajnalkamag -->
+  <div class="additional-info" id="hajnalkamag-info" style="display: none;">
+	<h2>LSD</h2>
+    <p><strong>Hajnalkamag</strong> morzsalék + Petróleum + Metanol + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+  </div>
+  <!-- Hawaii-bébi farózsamag -->
+  <div class="additional-info" id="hawaiimag-info" style="display: none;">
+	<h2>LSD #1</h2>
+    <p><strong>Hawaii-bébi farózsamag</strong> morzsalék + Petróleum + Metanol + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+	<h2>Crack</h2>
+    <p><strong>Hawaii-bébi farózsa morzsalék</strong> + Nátrium-Hidroxid + Efedrin + Hidrogén-Jodid + Dietil-Éter + Sósav</p>
+    <p><img src="imgs/6.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/5.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/4.png" width="35px"> + <img src="imgs/3.png" width="35px"></p> 
+  </div>
+  <!-- Kapszulaforma -->
+  <div class="additional-info" id="kapszula-info" style="display: none;">
+	<h2>LSD</h2>
+    <p>Hajnalkamag morzsalék + Petróleum + Metanol + <strong>Kapszulaforma</strong> (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+	<h2>LSD #1</h2>
+    <p>Hawaii-bébi farózsamag morzsalék + Petróleum + Metanol + <strong>Kapszulaforma</strong> (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+  </div>
+  <!-- Kokalevél -->
+  <div class="additional-info" id="kokelev-info" style="display: none;">
+	<h2>COCA</h2>
+    <p><strong>Kokalevél</strong> + Nátrium-Karbonát + Házi kerozin + Házi kénsav + Kálium-permanganát</p>
+    <p><img src="imgs/40.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/13.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/41.png" width="35px"></p>
+  </div>
+  <!-- Nátrium-Karbonát -->
+  <div class="additional-info" id="natriumkarb-info" style="display: none;">
+	<h2>COCA</h2>
+    <p>Kokalevél + <strong>Nátrium-Karbonát</strong> + Házi kerozin + Házi kénsav + Kálium-permanganát</p>
+    <p><img src="imgs/40.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/13.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/41.png" width="35px"></p>
+  </div>
+  <!-- Kerozin -->
+  <div class="additional-info" id="kerozin-info" style="display: none;">
+	<h2>COCA</h2>
+    <p>Kokalevél + Nátrium-Karbonát + <strong>Házi kerozin</strong> + Házi kénsav + Kálium-permanganát</p>
+    <p><img src="imgs/40.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/13.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/41.png" width="35px"></p>
+  </div>
+  <!-- Kálium-permanganát -->
+  <div class="additional-info" id="kaliumperm-info" style="display: none;">
+	<h2>COCA</h2>
+    <p>Kokalevél + Nátrium-Karbonát + Házi kerozin + Házi kénsav + <strong>Kálium-permanganát</strong></p>
+    <p><img src="imgs/40.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/13.png" width="35px"> + <img src="imgs/14.png" width="35px"> + <img src="imgs/41.png" width="35px"></p>
+  </div>
+  <!-- Lenmagolaj -->
+  <div class="additional-info" id="lenmagolaj-info" style="display: none;">
+	<h2>Speed</h2>
+    <p>Efedrin + Vörösfoszfor + Hidrogén-Jodid + Nátrium-Hidroxid + Sósav + <strong>Lenmagolaj</strong></p>
+    <p><img src="imgs/5.png" width="35px"> + <img src="imgs/1.png" width="35px"> + <img src="imgs/12.png" width="35px"> + <img src="imgs/2.png" width="35px"> + <img src="imgs/3.png" width="35px"> + <img src="imgs/39.png" width="35px"></p>
+   </div>
+   <!-- Petróleum -->
+  <div class="additional-info" id="petroleum-info" style="display: none;">
+	<h2>LSD</h2>
+    <p>Hajnalkamag morzsalék + <strong>Petróleum</strong> + Metanol + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+	<h2>LSD #1</h2>
+    <p>Hawaii-bébi farózsamag morzsalék + <strong>Petróleum</strong> + Metanol + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+  </div>
+  <!-- Metanol -->
+  <div class="additional-info" id="metanol-info" style="display: none;">
+	<h2>LSD</h2>
+    <p>Hajnalkamag morzsalék + Petróleum + <strong>Metanol</strong> + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+	<h2>LSD #1</h2>
+    <p>Hawaii-bébi farózsamag morzsalék + Petróleum + <strong>Metanol</strong> + Kapszulaforma (Craft)</p>
+    <p><img src="imgs/10.png" width="35px"> + <img src="imgs/7.png" width="35px"> + <img src="imgs/8.png" width="35px"> + <img src="imgs/9.png" width="35px"></p>
+  </div>
 </div>
   <script src="index.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5312084350301173"
      crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
 </body>
 </html>
